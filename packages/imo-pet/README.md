@@ -1,6 +1,6 @@
-# 🐶 IMO Pet
+# 🦁 IMO Pet
 
-Interoperable pets built on the [IMO Standard](../../README.md).
+Interoperable metaverse pets built on the [IMO Standard](../../README.md).
 
 ## Model Guidelines
 
