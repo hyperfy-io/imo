@@ -1,0 +1,221 @@
+/**
+ * [hyperfy] utility to remove scrollbar
+ */
+
+.-noscrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.-noscrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/**
+ * [hyperfy] make element scroll without scrollbars
+ */
+.-scroll-y {
+  overflow-y: auto;
+  /* hide scrollbars */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.-scroll-y::-webkit-scrollbar {
+  display: none;
+}
+
+/**
+ * [hyperfy] remove body inset
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+   * [hyperfy] prevent weird pan/zoom behaviour and bounce, especially in iOS
+   */
+
+html.-lock,
+html.-lock body {
+  touch-action: none;
+  overscroll-behavior: none;
+}
+
+/**
+   * Note: a lot of the following styles are borrowed from TailwindCSS
+   * and extend normalize.css 
+   *
+   * See: https://unpkg.com/tailwindcss@1.8.12/dist/base.css
+   */
+
+/**
+   * Manually forked from SUIT CSS Base: https://github.com/suitcss/base
+   * A thin layer on top of normalize.css that provides a starting point more
+   * suitable for web applications.
+   */
+
+/**
+   * Removes the default spacing and border for appropriate elements.
+   */
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+figure,
+p,
+pre {
+  margin: 0;
+}
+
+button {
+  background-color: transparent;
+  background-image: none;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Use Inter sans-serif by default */
+/* html {
+    font-family: Roboto, sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+      Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+      'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.4;
+    background: #151617;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+  } */
+
+/* 1. Prevent padding and border from affecting element width. */
+/* 2. Collapse borders everywhere. Specifically inputs, textareas, buttons etc */
+*,
+::before,
+::after {
+  box-sizing: border-box; /* 1 */
+  border-width: 0; /* 2 */
+}
+
+/* Only resize textareas vertically */
+textarea {
+  resize: vertical;
+}
+
+/* Use a better placeholder default color */
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #a0aec0;
+}
+
+input::-ms-input-placeholder,
+textarea::-ms-input-placeholder {
+  color: #a0aec0;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #a0aec0;
+}
+
+/* Buttons should have pointers */
+button,
+[role='button'] {
+  cursor: pointer;
+}
+
+/* Inherit font sizes */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* Reset links to optimize for opt-in styling instead of opt-out. */
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/* Reset form control styles and inherit */
+button,
+input,
+optgroup,
+select,
+textarea {
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+}
+
+/* Use a better mono font default */
+pre,
+code,
+kbd,
+samp {
+  font-family: Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New',
+    monospace;
+}
+
+/**
+   * Make replaced elements `display: block` by default as that's
+   * the behavior you want almost all of the time. Inspired by
+   * CSS Remedy, with `svg` added as well.
+   *
+   * https://github.com/mozdevs/cssremedy/issues/14
+   */
+img,
+svg,
+video,
+canvas,
+audio,
+iframe,
+embed,
+object {
+  display: block;
+  vertical-align: middle;
+}
+
+/**
+   * Constrain images and videos to the parent width and preserve
+   * their instrinsic aspect ratio.
+   *
+   * https://github.com/mozdevs/cssremedy/issues/14
+   */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/**
+   * Hide input[type=number] arrows
+   */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}

@@ -1,0 +1,27 @@
+{
+  "name": "imo-pet",
+  "version": "1.0.0",
+  "description": "Interoperable pets built on the IMO standard",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node ./esbuild.mjs"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@phosphor-icons/react": "^2.0.10",
+    "eventemitter3": "^5.0.1",
+    "immer": "^10.0.2",
+    "lodash": "^4.17.21",
+    "n8ao": "^1.6.8",
+    "postprocessing": "^6.33.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "three": "^0.151.3"
+  },
+  "devDependencies": {
+    "esbuild": "^0.19.3",
+    "fs-extra": "^11.1.1"
+  }
+}
